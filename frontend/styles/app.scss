@@ -1,0 +1,50 @@
+.container {
+  padding: 0 5%;
+  margin: 0 auto;
+}
+
+main {
+  min-height: calc(100vh - 3.5rem);
+}
+
+.mainH {
+  min-height: calc(100vh - 3.5rem);
+  max-height: calc(100vh - 3.5rem);
+  position: sticky;
+  top: 3.5rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.scroll {
+  &Y {
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0.2rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #eee;
+      border-radius: 0.2rem;
+
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+
+  &X {
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+  }
+}
